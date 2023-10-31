@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* quan es tria una opció del menú, que baixi lliscant */
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.capcalera{
+    background: #1e2326;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.capcalera header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.capcalera header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #2b6382;
+    text-decoration: none;
+}
+
+/* part del desplegable */
+.capcalera header ul{
+    display: flex;
+    list-style: none;
+}
+.capcalera header nav ul li a{
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+}
+.capcalera header nav ul li a:hover{
+    color: #2b6382;
+}
+.nav-responsive{
+    background-color: #2b6382;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* INICI */
+.inici{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inici .contingut-fons{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inici .contingut-fons img{
+    margin-top: 40px;
+    border: 10px solid #2b6382;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inici .contingut-fons h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inici .contingut-fons h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* SOBRE MI */
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contingut-seccio{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.sobremi .contingut-seccio p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contingut-seccio p span{
+    color: #6daacb;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col {
+    width: 60%;
+}
+/*dades personals i interessos*/
+.sobremi .fila .col h3{
+    font-size: 25px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #6daacb;
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    background-color: #2b6382;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contingut-interessos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contingut-interessos .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}.sobremi .fila .col .contingut-interessos .interes:hover{
+    background-color: #2b6382;
+}
+.sobremi .fila .col .contingut-interessos .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* HABILITATS */
+.habilitats{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.habilitats .contingut-seccio{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilitats h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.habilitats .fila{
+    display: flex;
+}
+.habilitats .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.habilitats .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.habilitats .habilitat > span{
+    font-weight: bold;
+    color:#78abc7;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.habilitats .habilitat .barra {
+    background-color: #3a3f42;
+    border-radius: 15px;
+    border-color: white;
+    border-width: 1px;
+    text-align: center;
+    font-family: 'Righteous';
+    animation: movi-ment 3s ease-in-out forwards;
+}
+/* per fer que els % només es mostrin si es passa per sobre el cursor */
+.habilitat .t {
+    opacity: 0; 
+    transition: opacity 0.3s; 
+  }
+  
+.habilitat:hover .t {
+    opacity: 1;
+}
+/* animacio per les barres de les habilitats */
+@keyframes movi-ment {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+/*per cada habilitat*/
+.habilitats .habilitat .parcentatge{
+    background-color:#4e84a1;
+    border-radius: 15px;
+}
+/* % corresponent */
+.habilitats .habilitat .java {
+    width: 75%;
+}
+.habilitats .habilitat .html {
+    width: 65%;
+}
+.habilitats .habilitat .cplus {
+    width: 95%;
+}
+.habilitats .habilitat .comunicacio {
+    width: 90%;
+}
+.habilitats .habilitat .equip {
+    width: 85%;
+}
+.habilitats .habilitat .dedicacio {
+    width: 90%;
+}
+.habilitats .habilitat .lider {
+    width: 75%;
+}
+
+
+/* CURRICULUM */
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contingut-seccio{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .fila .esquerre{
+    border-right: 2px solid #252A2E;
+}
+.curriculum .fila .dreta{
+    border-left: 2px solid #252A2E;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+/* títols */
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* subtítols */
+.curriculum .fila .item .empresa{
+    color: #2b6382;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .data{
+    display: block;
+    color: #4e84a1;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .esq{
+    border-right: 2px solid #2b6382;
+    margin-right: 20px;
+}
+.curriculum .fila .dret{
+    border-left: 2px solid #2b6382;
+    margin-left: 20px;
+}
+.curriculum .col .item ul li {
+    margin:10px;
+}
+
+.curriculum .fila .altres {
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.curriculum .fila .col .a {
+    background-color: #2b6382;
+    margin: 0 15px;
+    
+}
+/* per descarregar el cv */
+.curriculum button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.curriculum button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2b6382;
+    border-radius: 15px;
+    z-index: -1;
+}
+.curriculum button:hover .overlay{
+    width: 100%;
+    transition: .5s;
+}
+
+/* CONTACTE */
+.contacte{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacte .contingut-seccio{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacte h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacte .fila{
+    display: flex;
+}
+.contacte .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacte .col input, .contacte .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #2b6382;
+    font-size: 18px;
+}
+.contacte button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    width: fit-content;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacte button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2b6382;
+    border-radius: 15px;
+    z-index: -1;
+}
+.contacte button:hover .overlay{
+    width: 100%;
+}
+
+/* RESPONSIVE */
+/* per ajustar les mides dels elements segons la mida de la finestra */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .habilitats .fila{
+        display: block;
+    }
+    .habilitats .fila .col{
+        width: 100%;
+    }
+    .habilitats .fila .col .barra{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .dret{
+        margin-left: 20px;
+    }
+
+    .contacte .fila{
+        display: block;
+    }
+    .contacte .fila .col{
+        width: 100%;
+    }
+}

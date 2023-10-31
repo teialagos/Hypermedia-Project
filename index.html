@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estil.css">
+</head>
+<body>
+    <!-- CAPÇALERA -->
+    <div class="capcalera">
+        <header>
+            <div class="logo">
+                <a>Teia</a>
+            </div>
+
+            <!-- índex -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inici" onclick="seleccionar()">INICI</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilitats" onclick="seleccionar()">HABILITATS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacte" onclick="seleccionar()">CONTACTE</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- INICI -->
+    <section id="inici" class="inici">
+        <div class="contingut-fons">
+            <div class="contingut-img">
+                <img src="img/jo.jpg" alt="">
+            </div>
+            <h1>TEIA LAGOS</h1>
+            <h2>Estudiant d'enginyeria Informàtica</h2>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contingut-seccio">
+            <h2>SOBRE MI</h2>
+            <p>Hola, soc <span>Teia Lagos.</span>
+                Soc una estudiant universitària amb moltes ganes d'apendre.
+                Em considero una persona activa, amb facilitat pel treball en equip i disciplinada</p>
+
+            <div class="fila">
+                <!-- dades personals  -->
+                <div class="col">
+                    <h3>Dades Personals</h3>
+                    <ul>
+                        <li>
+                            <strong>Edat</strong>
+                            20 anys
+                        </li>
+                        <li>
+                            <strong>Telèfon</strong>
+                            610 04 57 75
+                        </li>
+                        <li>
+                            <strong>Correu electrònic</strong>
+                            u1978889@campus.udg.edu
+                        </li>
+                        <li>
+                            <strong>Direcció</strong>
+                            17005 Girona
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- interessos -->
+                <div class="col">
+                    <h3>Interessos</h3>
+                    <div class="contingut-interessos">
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>ORDINADORS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIATGES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>ESPORTS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LLEGIR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-mountain"></i>
+                            <span>NATURA</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILITATS -->
+    <section class="habilitats" id="habilitats">
+        <div class="contingut-seccio">
+            <h2>HABILITATS</h2>
+            <div class="fila">
+                <!-- Habilitats tècniques -->
+                <div class="col">
+                    <h3>Habilitats tècniques</h3>
+                    <div class="habilitat">
+                        <span>Java</span>
+                        <div class="barra">
+                                <div class="parcentatge java">
+                                    <div class="t">75</div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="habilitat">
+                        <span>HTML & CSS</span>
+                        <div class="barra">
+                            <div class="parcentatge html">
+                                <div class="t">65</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilitat">
+                        <span>C++</span>
+                        <div class="barra">
+                            <div class="parcentatge cplus">
+                                <div class="t">95</div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilitats professionals i personals -->
+                <div class="col">
+                    <h3>Habilitats professionals i personals</h3>
+                    <div class="habilitat">
+                        <span>Comunicació</span>
+                        <div class="barra">
+                            <div class="parcentatge comunicacio">
+                                <div class="t">90</div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="habilitat">
+                        <span>Treball en equip</span>
+                        <div class="barra">
+                            <div class="parcentatge equip">
+                                <div class="t">85</div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="habilitat">
+                        <span>Dedicació</span>
+                        <div class="barra">
+                            <div class="parcentatge dedicacio">
+                                <div class="t">90</div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="habilitat">
+                        <span>Capacitat de lideratge</span>
+                        <div class="barra">
+                            <div class="parcentatge lider">
+                                <div class="t">75</div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contingut-seccio">
+            <h2>CURRÍCULUM</h2>
+            <div class="fila">
+                <div class="col esquerra">
+                    <h3>Experiència laboral</h3>
+                    <div class="item esq">
+                        <h4>Venedora</h4>
+                        <span class="empresa">Decathlon Girona</span>
+                        <span class="data">Setembre 2022 - Setembre 2023</span>
+                        <p>Venedora de la secció de fitness i després de la de camping.
+                            <ul>
+                                <li>Atenció al client</li>
+                                <li>Preparació de comandes</li>
+                                <li>Gestió dels aparells informàtics</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="item esq">
+                        <h4>Venedora</h4>
+                        <span class="empresa">Decimas</span>
+                        <span class="data">Juny 2022 - Agost 2022</span>
+                        <p>Venedora per la temporada d'estiu.
+                            <ul>
+                                <li>Atenció al client</li>
+                                <li>Recompte de caixa</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="item esq">
+                        <h4>Reposadora d'aliments</h4>
+                        <span class="empresa">El corte Inglés</span>
+                        <span class="data">Desembre 2021 - Gener 2022</span>
+                        <p>Reposadora d'aliments al supermercat. Per la temporada de Nadal.</p>
+                    </div>
+                </div>
+
+                <div class="col dreta">
+                    <h3>Educació</h3>
+                    <div class="item dret">
+                        <h4>Enginyeria informàtica</h4>
+                        <span class="empresa">Universitat de Girona</span>
+                        <span class="data">2021 - Actualitat</span>
+                        <p>Grau en enginyeria informàtica.</p>
+                    </div>
+                    <div class="item dret">
+                        <h4>Batxillerat tecnològic</h4>
+                        <span class="empresa">IES Montilivi</span>
+                        <span class="data">2019 - 2021</span>
+                        <p>Estudis postobligatoris</p>
+                    </div>
+                    <div class="altres">
+                        <div class="item a">
+                        <h4> Altre informació rellevant </h4>
+                        <ul>
+                            <li> Carnet de cotxe tipus B</li>
+                            <li> Vehicle propi</li>
+                            <li> Disponibilitat inmediata</li>
+                        </ul>
+                    </div>
+                    <button>
+                        Descarregar CV <i href="./doc/cv.pdf" download="cv" class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTE -->
+    <section id="contacte" class="contacte">
+        <div class="contingut-seccio">
+            <h2>CONTACTE</h2>
+            <div class="fila">
+                <!-- Formulari -->
+                <div class="col">
+                    <input type="text" placeholder="Nom">
+                    <input type="text" placeholder="Telèfon">
+                    <input type="text" placeholder="Direcció de correu">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Missatge"></textarea>
+                    <button>
+                        Enviar missatge
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
