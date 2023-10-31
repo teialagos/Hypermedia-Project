@@ -1,7 +1,11 @@
 # Hypermedia-Project
+
 Títol del Projecte: Currículum online
+
 Data: 05/11/2023
+
 Autora: Teia Lagos
+
 Resum:
 Aquest anàlisi del projecte té com a objectiu proporcionar una comprensió dels aspectes relacionats amb el Currículum online. Enentre què s'ha fet, com i perquè.
 L'anàlisi es divideix en tres seccions principals: Perfil de l'Usuari Objectiu, Arquitectura de la Informació i Disseny Visual.
