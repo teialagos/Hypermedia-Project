@@ -349,7 +349,7 @@ html{
 }
 /* per descarregar el cv */
 a {
-    text-decoration: none; /* Elimina el subrayado */
+    text-decoration: none;
 }
 .curriculum button{
     cursor: pointer;
