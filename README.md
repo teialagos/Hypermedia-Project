@@ -1,4 +1,4 @@
-# Hypermedia-Project
+# teialagos.git.io
 
 Títol del Projecte: Currículum online
 
